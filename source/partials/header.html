@@ -1,0 +1,316 @@
+<header class="fixed-block">
+    <div class="container">
+        <div class="header">
+            <button class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="main-nav">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link" >Blog homepage</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link" >ZenDiver.co</a>
+                </li>
+            </ul>
+
+            <a href="/" class="header__logo">
+                <svg width='196' height='40'>
+                    <use href='img/sprite/sprite.svg#logo'></use>
+                </svg>
+            </a>
+
+            <div class="header__btns">
+                <a href="#" class="header__boarded boarded"
+                    data-aos-delay="50">
+                    Take the quiz
+
+                    <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#gift'></use>
+                    </svg>
+                </a>
+                
+                <a href="#" class="header__blue blue"><span>Try ZenDiver for free</span></a>
+            </div>
+        </div>
+
+        <div class="header-menu">
+            <div class="header-menu__box">
+                <div class="header-menu__inner">
+                    <div class="explore">
+                        <a class="explore__link personal" href="#">
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#avatar'></use>
+                            </svg>
+
+                            ZenDiver for personal use
+
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#proceed-arrow'></use>
+                            </svg>
+                        </a>
+
+                        <a class="explore__link corporate" href="#">
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#corporate'></use>
+                            </svg>
+
+                            Corporate solution
+
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#proceed-arrow'></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <ul class="header-menu__navs">
+                        <li class="header-menu__nav">
+                            <span>Topics</span>
+
+                            <ul class="main-nav">
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Stress and Burnout</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Anxiety</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Guilt</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Overweight</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">Explore more...</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="header-menu__nav">
+                            <span>Fields</span>
+
+                            <ul class="main-nav">
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">For CEO of a company</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">For self-employed</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">For office workers</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">For biohackers</a>
+                                </li>
+                                <li class="main-nav__item">
+                                    <a href="#" class="main-nav__link">For spiritual seeker</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="apps">
+                        <a class="apps__link" href="#">
+                            <img width='200' height='70' src='img/google.svg' alt='google app'>
+                        </a>
+                        <a class="apps__link" href="#">
+                            <img width='200' height='70' src='img/app-store.svg' alt='ios app'>
+                        </a>
+                    </div>
+
+                    <div class="header-menu__language">
+                        <span>Language:</span>
+              
+                        <ul class="header-menu__language-list">
+                            <li class="active">
+                                <a href="#">EN</a>
+                            </li>
+                            <li>
+                                <a href="#">ES</a>
+                            </li>
+                            <li>
+                                <a href="#">FR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <form id="menuForm" class="main-form">
+                    <div class="main-form__title">Ask a Question</div>
+
+                    <div class="main-form__labels">
+                        <label class="name" for="name">
+                            <p>Name</p>
+                            <input id="name" type="text" name="name" placeholder="What's your preferred name?" required>
+                        </label>
+                        <label class="email" for="email">
+                            <p>Email</p>
+                            <input id="email" type="email" name="email" placeholder="What's your email address?" required>
+                        </label>
+                        <label class="topics" for="topics">
+                            <p>Topic</p>
+                            <select class="main-form__select" id="topics" name="topics">
+                                <option value="" disabled selected>Select one from list</option>
+                                <option value="stress">Stress and Burnout</option>
+                                <option value="anxiety">Anxiety</option>
+                                <option value="guilt">Guilt</option>
+                                <option value="overweight">Overweight</option>
+                            </select>
+                            <div class="arrow">
+                                <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#arrow-up'></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="message" for="message">
+                            <p>Message</p>
+                            <textarea name="message" id="message" placeholder="How we can help you? Leave your message here." required></textarea>
+                        </label>
+                    </div>
+
+                    <button type="submit">
+                        Send
+                        <svg width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#subscribe'></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="filter-menu">
+            <div class="filter-menu__top">
+                <span class="filter-menu__title">Filters</span>
+
+                <button class="filter-menu__close">
+                    <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#close'></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="filter-menu__box">
+                <div class="search">
+                    <span class="search__title">Search by keywords</span>
+                    <input type="text" name="search_filter" id="search_filter" class="search__input" placeholder="Type here">
+                </div>
+
+                <div class="filter-menu__inner">
+                    <span class="filter-menu__subtitle">I’m a(n)</span>
+
+                    <div class="filter-menu__wrapp">
+                        <label class="radio-checkbox">
+                            <input type="radio" checked name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">All categories</span>
+                          </label>
+                          <label class="radio-checkbox">
+                            <input type="radio" name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">I am a CEO of a company</span>
+                          </label>
+                          <label class="radio-checkbox">
+                            <input type="radio" name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">I am self-employed</span>
+                          </label>
+                          <label class="radio-checkbox">
+                            <input type="radio" name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">I work in an office</span>
+                          </label>
+                          <label class="radio-checkbox">
+                            <input type="radio" name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">I am into biohacking</span>
+                          </label>
+                          <label class="radio-checkbox">
+                            <input type="radio" name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">I am a spiritual seeker</span>
+                          </label>
+                    </div>
+                </div>
+
+                <div class="filter-menu__inner">
+                    <span class="filter-menu__subtitle">I’m interested in</span>
+
+                    <div class="filter-menu__wrapp">
+                        <label class="custom-checkbox">
+                          <input type="checkbox" class="custom-checkbox__field">
+                          <span class="custom-checkbox__content">Everything</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Stress and Burnout</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Anxiety</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Guilt</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Overweight</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Sleep Quality</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Motivation</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Goal Setting and Achievement</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Integrity</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Awareness</span>
+                          </label>
+                          <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Emotional Intelligence</span>
+                          </label>
+                    </div>
+                </div>
+
+                <!-- For category page -->
+                <div class="filter-menu__inner">
+                    <span class="filter-menu__subtitle">Sort by</span>
+
+                    <div class="filter-menu__wrapp">
+                        <label class="radio-checkbox">
+                            <input type="radio" checked name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">Newest first</span>
+                          </label>
+                          <label class="radio-checkbox">
+                            <input type="radio" name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">Oldest first</span>
+                          </label>
+                          <label class="radio-checkbox">
+                            <input type="radio" name="categories" class="radio-checkbox__field">
+                            <span class="radio-checkbox__content">Most read first</span>
+                          </label>
+                    </div>
+                </div>
+                <!-- For category page -->
+
+                <div class="filter-menu__bottom">
+                    <button class="filter-menu__clear">Clear filters</button>
+                    <button class="main-button main-button--green">
+                        Apply filters
+                        <svg width='20' height='20'>
+                          <use href='img/sprite/sprite.svg#filter'></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>

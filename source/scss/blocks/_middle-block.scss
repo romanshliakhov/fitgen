@@ -1,0 +1,61 @@
+.middle-block {
+    position: relative;
+    padding: 160px 0;
+    padding: clamp(120px, 8.421vw, 160px) 0 clamp(140px, 11.458vw, 220px);
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: clamp(60px, 9.474vw, 100px);
+            bottom: clamp(80px, 6.25vw, 120px);
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #FAFAFA;
+            z-index: -1;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../img/middle-frame-top.png');
+        background-position: top left;
+        background-size: cover;
+        width: 100%;
+        height: clamp(220px, 17.053vw, 324px);
+        z-index: -1;
+
+        @include small-tablet{
+            background-position: center;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url('../img/middle-frame-bot.png');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: clamp(240px, 17.813vw, 342px);
+        z-index: -1;
+    }
+
+    &__wrapp {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(64px, 6.458vw, 124px);
+        z-index: 1;
+    }
+}

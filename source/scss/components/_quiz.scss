@@ -1,0 +1,162 @@
+.quiz {
+    position: relative;
+    z-index: 2;
+
+    &__top-frame {
+        height: 32px;
+        clip-path: polygon( 0% 100%,100% 100%,100% 64.92%,100% 64.92%,99.952% 57.655%,99.813% 50.755%,99.591% 44.311%,99.292% 38.415%,98.925% 33.156%,98.497% 28.626%,98.014% 24.917%,97.485% 22.119%,96.917% 20.324%,96.318% 19.622%,3.808% 0.776%,3.808% 0.776%,3.193% 1.257%,2.609% 2.892%,2.063% 5.587%,1.564% 9.245%,1.119% 13.77%,0.738% 19.068%,0.427% 25.043%,0.195% 31.6%,0.05% 38.642%,0% 46.074%,0% 100% );
+        background-color: white; 
+    }
+
+    &__bottom-frame {
+        height: 32px;
+        clip-path: polygon( 0% 33.098%,0% 33.098%,0.047% 39.048%,0.183% 44.706%,0.401% 49.997%,0.694% 54.848%,1.055% 59.184%,1.477% 62.932%,1.952% 66.019%,2.473% 68.37%,3.034% 69.912%,3.626% 70.571%,96.136% 100%,96.136% 100%,96.758% 99.686%,97.349% 98.394%,97.903% 96.204%,98.409% 93.198%,98.861% 89.455%,99.249% 85.058%,99.565% 80.085%,99.801% 74.619%,99.949% 68.739%,100% 62.527%,100% 1.21%,0% 1.21%,0% 33.098% );
+        background-color: white;
+    }
+
+    &__content {
+        margin: -2px 0;
+        padding: 4px 0;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr clamp(200px, 15.139vw, 218px);
+        background-color: white;
+
+        @include small-tablet {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__info {
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__duration {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+    }
+
+    &__title {
+        font-family: var(--font-primary);
+        font-size: 24px;
+        line-height: 133%;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        transition: all 0.4s ease;
+    }
+
+    &__btn {
+        position: relative;
+        width: fit-content;
+        padding: 12px 16px 12px 20px;
+        background: linear-gradient(315deg, #0a8bd3 0%, #2ab2ff 100%);
+        border-radius: 100px;
+
+        span {
+            position: relative;
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-second);
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: rgba(var(--cl-a),1.0);
+            transition: all 0.4s ease;
+
+            svg {
+                stroke: rgba(var(--cl-a),1.0);
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(315deg, #1ba0eb 0%, #2ab2ff 100%);
+            border-radius: 100px;
+            opacity: 0;
+            transition: all 0.4s ease;
+            z-index: -1;
+        }
+      
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(315deg, rgba(27, 160, 235, 0.8) 0%, rgba(42, 178, 255, 0.8) 100%);
+            border-radius: 100px;
+            opacity: 0;
+            transition: all 0.4s ease;
+            z-index: -1;
+        }
+    }
+
+    &__picture {
+        position: relative;
+
+        @include small-tablet {
+            position: absolute;
+            right: 0;
+            top: -10%;
+            width: clamp(155px, 28.646vw, 220px);
+            height: 155px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        display: flex;
+        width: clamp(280px, 21.597vw, 311px);
+        height: clamp(280px, 21.597vw, 311px);
+        z-index: 2;
+        left: -50px;
+        top: -100px;
+        transform: rotate(-5deg);
+        transition: all 0.3s ease-in;
+
+        @include small-tablet {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: initial;
+            top: -85px;
+            transform: rotate(0deg);
+        }
+    }
+
+    &:hover {
+        .quiz__title {
+            color: rgba(var(--cl-e),1.0);
+        }
+
+        .quiz__image {
+            transform: rotate(-7.5deg);
+        }
+
+        .quiz__btn::before {
+            opacity: 1;
+            z-index: 0;
+        } 
+    }
+
+    &:active {
+        .quiz__title {
+            color: #0876b4;
+        }
+
+        .quiz__btn::after {
+            opacity: 1;
+            z-index: 1;
+        } 
+    }
+}

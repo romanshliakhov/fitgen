@@ -1,0 +1,56 @@
+.burger {
+  position: relative;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(180deg, #eaeaea 0%, #cbcbcb 100%);
+  border-radius: 100px;
+  color: rgba(var(--cl-c),1.0);
+  flex-shrink: 0;
+  transition: all .3s;
+  cursor: pointer;
+  z-index: 90;
+  transition: all 0.3s ease;
+
+  &:hover {
+    gap: 5px;
+  }
+
+  span {
+    width: 100%;
+    border: 1.5px solid rgba(var(--cl-c),1.0);
+    transition: all 0.3s ease;
+  }
+
+  &.active {
+    &:hover {
+      gap: 3px;
+    }
+
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -4px);
+    }
+  }
+
+  @include tablet {
+    background: transparent;
+    width: 62px;
+    height: 62px;
+    padding: 19px;
+  }
+
+}
+

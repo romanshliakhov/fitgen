@@ -1,0 +1,93 @@
+.feedbacks-section {
+    position: relative;
+    padding: clamp(30px, 4.839vw, 60px) 0;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-image: var(--feedbacks-bg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 491px;
+    }
+
+    &__top {
+        margin-bottom: clamp(24px, 4.839vw, 60px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__slider {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__pagination {
+        position: relative;
+        top: initial !important;
+        bottom: initial !important;
+        margin: 32px auto 0;
+        display: flex;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        span {
+            margin: 0 !important;
+            opacity: 1 !important;
+            width: 6px;
+            height: 6px;
+            background: rgba(var(--bg-a),1.0);
+
+            &.swiper-pagination-bullet-active {
+                width: 12px;
+                height: 12px;
+                background: rgba(var(--bg-d),1.0);
+            }
+        }
+
+        .swiper-pagination-bullet {
+            padding: 0;
+        }
+
+        @include small-tablet {
+            display: flex;
+        }
+    }
+
+    &__progressbar {
+        position: relative;
+        margin: 60px auto 0;
+        max-width: 489px;
+        width: 100%;
+        background: #e8e0d6;
+        border-radius: 450px;
+        padding: 8px;
+
+
+        @include small-tablet {
+            display: none
+        }
+    }
+
+    &__scrollbar {
+        position: relative !important;
+        height: 16px !important;
+        bottom: initial !important;
+        background: #dbd3c9;
+        border-radius: 50px;
+
+        .swiper-scrollbar-drag {
+            background: rgba(var(--cl-a),1.0); 
+            cursor: pointer;
+        }
+    }
+}

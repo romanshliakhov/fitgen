@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+
+    <main class="post">
+        <section class="article">
+            <div class="container">
+                <div class="article__wrapp">
+                    <div class="article__inner">
+                        <div class="breadcrumbs">
+                            <a class="breadcrumbs__prev" href="/">Blog</a>
+                            <a class="breadcrumbs__prev" href="#">Quizzes</a>
+                            <span class="breadcrumbs__current">What are your current state? Take the quiz!</span>
+                        </div>
+
+                        <div class="article__top">
+                            <div class="article__info">
+                                <h1 class="article__title">What are your current state? Take the quiz!</h1>
+
+                                <p class="article__excerpt">Quiz subtitle here</p>
+
+                                <ul class="article__details details">
+                                    <li class="author">
+                                        <svg width='12' height='16'>
+                                            <use href='img/sprite/sprite.svg#watch'></use>
+                                        </svg>
+                                        <p class="author">3 minutes</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="article__quiz-picture">
+                                <picture>
+                                    <source type='image/webp' srcset='img/quiz/quiz-1.webp'>
+                                    <img width='338' height='338' src='img/quiz/quiz-1.png'
+                                        alt='What are your current state? Take the quiz!'>
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="article__box quiz-box" data-quiz>
+                            <div class="article__aside">
+                                <div class="article__aside-heading">We're launched!</div>
+
+                                <p class="article__aside-descr">Get your <span>80% off</span> <br> for yearly
+                                    subscription!</p>
+
+                                <a class="article__aside-link" href="#">
+                                    Try ZenDiver
+                                    <svg width='20' height='20'>
+                                        <use href='img/sprite/sprite.svg#transformation-green'></use>
+                                    </svg>
+                                </a>
+
+                                <span class="article__aside-ps">*Only for 100 first users</span>
+                            </div>
+
+                            <div class="article__share-mob share">
+                                <span>Share:</span>
+
+                                <ul class="share__socials">
+                                    <li>
+                                        <a class="twitter" href="#">
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#twitter'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="linkedin" href="#">
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#linkedin'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="facebook" href="#">
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#facebook'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="email" href="#">
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#mail'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a class="link" href="#">
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#link'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="article__content">
+                                <form class="quiz-section__box form-quiz" novalidate="novalidate">
+                                    <div class="form-quiz__heading quiz-section__heading">Rate your resistance to starting transformational work right now.</div>
+
+                                    <ul class="form-quiz__lists">
+                                        <li class="form-quiz__list active" style="opacity: 1; transition: all 600ms ease 0s; display: flex;">
+                                            <div class="form-quiz__card">
+                                                <span class="form-quiz__title">1/3 Mindfulness</span>
+
+                                                <span class="form-quiz__question">How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?</span>
+
+                                                <ul class="form-quiz__items">
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="0" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">0</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="1" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">1</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="2" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">2</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="3" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">3</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="4" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">4</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="5" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">5</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="6" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">6</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="7" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">7</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="8" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">8</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it to be present in the present moment without being distracted by internal dialog or thought flow?" value="9" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">9</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="form-quiz__map">
+                                                    <p>0 – Not intense at all</p>
+                                                    <p>9 - Extreme intense</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="form-quiz__list" style="opacity: 0; display: none; transition: all 0ms ease 0s;">
+                                            <div class="form-quiz__card">
+                                                <span class="form-quiz__title">2/3 Joy and Pleasure</span>
+
+                                                <span class="form-quiz__question">How difficult is it for you to find joy and pleasure in the current moment?</span>
+
+                                                <ul class="form-quiz__items">
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="0" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">0</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="1" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">1</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="2" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">2</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="3" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">3</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="4" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">4</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="5" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">5</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="6" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">6</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="7" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">7</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="8" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">8</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you to find joy and pleasure in the current moment?" value="9" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">9</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="form-quiz__map">
+                                                    <p>0 – Not intense at all</p>
+                                                    <p>9 - Extreme intense</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="form-quiz__list" style="opacity: 0; display: none; transition: all 0ms ease 0s;">
+                                            <div class="form-quiz__card">
+                                                <span class="form-quiz__title">3/3 Joy and Pleasure</span>
+
+                                                <span class="form-quiz__question">How difficult is it for you? </span>
+
+                                                <ul class="form-quiz__items">
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="0" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">0</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="1" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">1</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="2" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">2</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="3" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">3</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="4" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">4</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="5" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">5</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="6" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">6</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="7" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">7</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="8" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">8</span>
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="form-quiz__item">
+                                                        <label class="form-quiz__checkbox">
+                                                            <input type="radio" name="How difficult is it for you? " value="9" class="form-quiz__input">
+                                                            <span class="form-quiz__mark">9</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="form-quiz__map">
+                                                    <p>0 – Not intense at all</p>
+                                                    <p>9 - Extreme intense</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="form-quiz__list skip-item result" style="opacity: 0; display: none; transition: all 0ms ease 0s;">
+                                            <div class="form-quiz__card">
+                                                <span class="form-quiz__title">Quiz completed!</span>
+
+                                                <p class="form-quiz__question">We appreciate your participation in quiz! Please provide your email address to get your results sent to you:</p>
+
+                                                <label class="form-quiz__results">
+                                                    <input type="email" name="email" placeholder="Your email address" required>
+                                                    <button>
+                                                        Get quiz results
+                                                        <svg width="20" height="20">
+                                                            <use href="img/sprite/sprite.svg#subscribe"></use>
+                                                        </svg>
+                                                    </button>
+                                                </label>
+                                            </div>
+                                        </li>
+
+                                        <li class="form-quiz__list skip-item send" style="opacity: 0; display: none; transition: all 0ms ease 0s;">
+                                            <div class="form-quiz__card">
+                                                <span class="form-quiz__title">Results Sent!</span>
+
+                                                <span class="form-quiz__question">Your quiz results have been sent to the email address you provided! Please check your inbox. If you don't see the email, be sure to look in your spam folder.</span>
+
+                                                <button class="form-quiz__restart">
+                                                    <svg width='24' height='24'>
+                                                        <use href='img/sprite/sprite.svg#restart'></use>
+                                                    </svg>
+                                                    Start quiz again
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="form-quiz__controls">
+                                        <button type="button" class="form-quiz__btn form-quiz__btn--prev form-quiz__btn--disable" data-prev="">
+                                            <svg width='24' height='24'>
+                                                <use href='img/sprite/sprite.svg#proceed-arrow'></use>
+                                            </svg>
+                                            <p>Previous</p>
+                                        </button> 
+                                        <button type="button" class="form-quiz__btn" data-next="" style="opacity: 1; display: flex;">
+                                            Next
+                                            <svg width='24' height='24'>
+                                                <use href='img/sprite/sprite.svg#proceed-arrow'></use>
+                                            </svg>
+                                        </button> 
+                                        <button class="form-quiz__btn hide" style="opacity: 0; display: none;">
+                                            Complete
+                                            <svg width='24' height='24'>
+                                                <use href='img/sprite/sprite.svg#check'></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article__right-sticky">
+                        <div class="share">
+                            <span>Share:</span>
+
+                            <ul class="share__socials">
+                                <li>
+                                    <a class="twitter" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#twitter'></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#linkedin'></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="facebook" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#facebook'></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="email" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#mail'></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a class="link" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#link'></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @include('partials/footer.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

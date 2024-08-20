@@ -1,0 +1,50 @@
+.details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: rgba(var(--cl-c), 0.6);
+
+        p {
+            font-size: 14px;
+            line-height: 129%;
+            color: rgba(var(--cl-c), 0.6);
+        }
+
+        &:first-child {
+            svg {
+                fill: currentColor;
+                stroke: transparent;
+            }
+        }
+
+        svg {
+            stroke: currentColor;
+        }
+
+        &.author {
+            svg {
+                fill: transparent;
+                stroke: currentColor;
+            }
+        }
+
+        &.readtime {
+            svg {
+                fill: transparent;
+                stroke: currentColor;
+            }
+        }
+
+        &.pubtime {
+            svg {
+                fill: currentColor;
+                stroke: transparent;
+            }
+        }
+    }
+}

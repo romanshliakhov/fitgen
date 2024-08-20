@@ -1,0 +1,16 @@
+h1,
+.title{
+  font-family: var(--font-primary);
+  font-size: clamp(36px, 3.472vw, 50px);
+  // font-size: 50px;
+  line-height: 128%;
+  font-weight: 700;
+}
+
+h2,
+.subtitle {
+  font-family: var(--font-primary);
+  font-size: clamp(30px, 2.778vw, 40px);
+  line-height: 150%;
+  font-weight: 600;
+}

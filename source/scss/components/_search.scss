@@ -1,0 +1,52 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4px;
+  
+    @include for-laptop{
+      width: Min(30.9091vw, 408px);
+    }
+  
+    @include laptop{
+      width: 100%;
+    }
+  
+    &__title{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+    }
+  
+    &__input{
+      height: 52px;
+      background: rgba(var(--bg-c), .04);
+      border: 1px solid rgba(47, 47, 47, 0.24);
+      border-radius: 8px;
+      padding: 16px;
+      font-family: var(--second-family);
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 118%;
+      letter-spacing: -0.02em;
+      transition: all 0.3s ease;
+   
+      &::placeholder{
+        font-family: var(--second-family);
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 118%;
+        letter-spacing: -0.02em;
+        color: rgba(var(--cl-c),.75);
+      }
+
+      &:hover {
+        background: rgba(var(--bg-c), .08);
+      }
+
+      &:focus {
+        background: rgba(var(--bg-c), .12);
+        border: 1px solid rgba(47, 47, 47, 0.8);
+      }
+    }
+  }

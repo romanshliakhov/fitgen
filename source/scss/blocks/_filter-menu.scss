@@ -1,0 +1,134 @@
+.filter-menu {
+    position: fixed !important;
+    z-index: 50;
+    left: 0;
+    max-width: 100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(var(--bg-a),1.0);
+    padding: 38px 16px 32px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+    height: 100dvh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 32px;
+    transform: translate(120%);
+    
+    &.active {
+      transform: translate(0%);
+    }
+  
+    @include mobile {
+      max-width: 100%;
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 8px;
+        width: 100%;
+    }
+
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 10px;
+    }
+
+    &__wrapp{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        grid-gap: 20px;
+        border: 1px solid rgba(var(--br-a),1.0);
+        border-radius: 4px;
+        padding: 16px 12px  18px;
+    }
+  
+    &__close{
+      transition: all .2s ease;
+      display: flex;
+      align-items: center;
+      grid-gap: 8px;
+      z-index: 20;
+
+      svg{
+        transition: all .2s ease;
+      }
+  
+      &:hover{
+        svg{
+        transform: scale(1.05);
+      }
+    }
+    }
+  
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 10px;      
+        width: 100%;  
+
+        @include tablet{
+            @include for-mobile{
+                grid-column: 1/-1;
+            }
+        }
+    }
+
+    .search{
+        @include tablet{
+            @include for-mobile{
+                grid-column: 1/-1;
+            }
+        }
+    }
+
+    &__clear{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 167%;
+        letter-spacing: -0.02em;
+        transition: all .3s;
+        font-family: var(--font-second);
+
+
+        &:hover{
+            color: rgba(var(--cl-d),1.0);
+        }
+    }
+  
+    &__box {
+
+      @include tablet{
+        @include for-mobile{
+            display: grid;
+            grid-gap: 32px clamp(15px, 2.4242vw, 32px);
+            grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @include mobile{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 32px;
+        align-items: center;
+      }
+    }
+ 
+    &__title{
+        font-family: var(--font-primary);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 133%;
+    }
+  
+     
+  }
+  

@@ -1,0 +1,56 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+:root {
+// --------------- default global variable ---------------
+  --body-bg: #f9f1e7;
+  --body-font-size: 16px;
+  --content-width: 1320px;
+  --container-offset: clamp(16px, 2.778vw, 40px);
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+// --------------- default js variable ---------------
+  --header-height: 72px;
+
+// --------------- default scroll variable ---------------
+  // --scrollbar-thumb: #FFCD07;
+  // --scrollbar-track:  #e4e4e4;
+  // --scrollbar-track-hover: #ffffff;
+  // --overlay-bg: rgba(39, 39, 39, 0.3);
+
+// --------------- default font-family variable ---------------
+  --font-primary: "Dosis" , sans-serif; // var(--font-primary);
+  --font-second: "Geologica" , sans-serif; // var(--font-second);
+
+// --------------- default text color variable ---------------
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  
+  --cl-c: #{HexToRGB(#2f2f2f)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#0d7768)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#0a8bd3)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#d36c40)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#006354)}; // rgba(var(--cl-g),1.0);
+
+// --------------- default background color variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+
+  --bg-c: #{HexToRGB(#2f2f2f)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#0d7768)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#0a8bd3)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#d36c40)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#F9F1E7)}; // rgba(var(--bg-g),1.0);
+  
+
+
+// --------------- default border color variable ---------------
+  --br-a: #{HexToRGB(#ebebeb)}; // rgba(var(--br-a),1.0);
+  --br-b: #{HexToRGB(#e3e3e3)}; // rgba(var(--br-b),1.0);
+  --br-c: #{HexToRGB(#777777)}; // rgba(var(--br-c),1.0);
+// -------------
+}
+
+

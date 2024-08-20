@@ -1,0 +1,11 @@
+.tabs {
+	position: relative;
+}
+
+.tabcontent {
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+}
