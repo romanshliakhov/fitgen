@@ -1,0 +1,19 @@
+.heading {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 34px;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 21px;
+        height: 1px;
+        background: rgba(var(--white),1.0);
+    }
+}

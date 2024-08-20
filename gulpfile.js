@@ -137,10 +137,11 @@ const scripts = () => {
         message: "Error: <%= error.message %>"
       })
     ))
+    .pipe(dest(paths.buildJsFolder))  // Сохранение оригинальных файлов
     .pipe(uglify())  // Минификация файлов
     .pipe(rename({ suffix: '.min' }))  // Переименование файлов с добавлением суффикса ".min"
     .pipe(sourcemaps.write('.'))  // Запись sourcemaps
-    .pipe(dest(paths.buildJsFolder))  // Сохранение файлов
+    .pipe(dest(paths.buildJsFolder))  // Сохранение минифицированных файлов
     .pipe(browserSync.stream());  // Обновление браузера
 };
 
@@ -153,10 +154,11 @@ const scriptsBackend = () => {
         message: "Error: <%= error.message %>"
       })
     ))
+    .pipe(dest(paths.buildJsFolder))  // Сохранение оригинальных файлов
     .pipe(uglify())  // Минификация файлов
     .pipe(rename({ suffix: '.min' }))  // Переименование файлов с добавлением суффикса ".min"
     .pipe(sourcemaps.write('.'))  // Запись sourcemaps
-    .pipe(dest(paths.buildJsFolder))  // Сохранение файлов
+    .pipe(dest(paths.buildJsFolder))  // Сохранение минифицированных файлов
     .pipe(browserSync.stream());  // Обновление браузера
 };
 
