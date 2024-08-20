@@ -1,0 +1,129 @@
+.footer {
+  padding: 73px 0 0;
+  position: relative;
+  background-color: #141414;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background: #000;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-image: url(../img/footer-icon.svg);
+    background-position:0 0;
+    background-size: 100%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50% ,-43%);
+  }
+}
+
+.footer__top {
+  border-bottom: 1px solid rgba(142, 137, 143, 0.5);
+}
+
+.footer__nav {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.footer-social__link + .footer-social__link {
+  margin-left: 14px;
+}
+
+.footer-bottom {
+  padding: 20px 0 37px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom__developed {
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #8E898F;
+  svg {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.footer-bottom__privacy {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #8E898F;
+  margin-right: 27px;
+}
+
+.footer-bottom__left {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-lang__list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color:  rgba(142, 137, 143, 0.508);
+    position: absolute;
+    left: 50%;
+  }
+}
+
+.footer-bottom__lang {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-lang__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #8E898F;
+  margin-right: 17px;
+}
+
+.bottom-lang__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  &--active {
+    font-weight: bold;
+    color: #FFD300;
+  }
+}
+
+.bottom-lang__item + .bottom-lang__item {
+  margin-left:20px ;
+}
+
+

@@ -1,0 +1,56 @@
+.about-third {
+  padding: 60px 0 0 0;
+  background-color: #000;
+  background-image: url(../img/about-third-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about-third__title {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 43px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.rest-info {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  flex-wrap: wrap;
+}
+
+.rest-info__item {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.rest-info__subtitle {
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  color: #8E898F;
+  margin-bottom: 10px;
+}
+
+.rest-info__info , .rest-info__tel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.rest-info__tel + .rest-info__tel {
+  margin-left: 25px;
+}
+
+.second-tab {
+
+}

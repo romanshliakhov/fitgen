@@ -1,0 +1,67 @@
+.fliter__checkbox > input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  outline: none;
+}
+
+.fliter__checkbox > span {
+  color: rgba(153, 153, 153, 0.7);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.fliter__checkbox > input:checked + span {
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.fliter__checkbox > span::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  margin-right: 11px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.fliter__checkbox > input:checked + span::before {
+  background-color: #ffd200;
+  border-color: #ffd200;
+  background-image: url(../img/check.svg);
+  background-position: center center;
+  transition: all 0.4s;
+  outline: none;
+}
+
+.fliter__checkbox > input:not(:disabled):active+label::before {
+  background-color: #fff;
+  outline: none;
+}
+
+.forgot {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(153, 153, 153, 0.7);
+}
+
+.login-first__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+

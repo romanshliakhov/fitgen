@@ -1,0 +1,60 @@
+.roster {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roster__coll {
+  width: 47%;
+}
+
+.roster__list {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.roster__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.roster__title {
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.roster__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.roster__weight {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #8E898F;
+  margin-left: 10px;
+}
+
+.roster__price {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.roster__valute {
+  font-weight: normal;
+}

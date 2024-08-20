@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content=" default ">
+  <title>KH__HOLZ</title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="index-header index-header--dark">
+    <div class="container">
+      <div class="header">
+        <div class="header__item">
+          <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="логотип" class="header__img">
+          </a>
+        </div>
+        <div class="header__item">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="brewery.html" class="nav__link">Пивоварня</a></li>
+              <li class="nav__item"><a href="restorans.html" class="nav__link">Рестораны</a></li>
+              <li class="nav__item"><a href="shops.html" class="nav__link">Магазины </a></li>
+              <li class="nav__item"><a href="our__bear.html" class="nav__link">Наше пиво</a></li>
+              <li class="nav__item"><a href="about__us.html" class="nav__link">О нас</a></li>
+              <li class="nav__item"><a href="delivery.html" class="nav__link nav__link--active">Доставка</a></li>
+              <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__item">
+          <a href="#" class="header__profile header__profile--true">
+            <svg width="29" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14.058" cy="8.106" r="7.106" stroke="#8E898F" stroke-width="2" />
+              <mask id="a" fill="#fff">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21.064 16.773a11.1 11.1 0 01-7.006 2.476c-2.655 0-5.092-.928-7.006-2.476L.897 24.387c-2.115 2.616-.253 6.515 3.11 6.515h20.1c3.364 0 5.226-3.899 3.112-6.515l-6.155-7.614z" />
+              </mask>
+              <path
+                d="M21.064 16.773l1.555-1.258-1.258-1.556-1.556 1.259 1.259 1.555zm-14.012 0l1.258-1.555-1.556-1.26-1.258 1.557 1.556 1.258zM.897 24.387l1.555 1.258-1.555-1.258zm26.322 0l-1.556 1.258 1.556-1.258zm-7.414-9.17a9.099 9.099 0 01-5.747 2.032v4a13.1 13.1 0 008.264-2.922l-2.517-3.11zm-5.747 2.032c-2.18 0-4.177-.76-5.748-2.031l-2.516 3.11a13.099 13.099 0 008.264 2.921v-4zM2.452 25.645l6.155-7.615-3.11-2.515L-.66 23.13l3.111 2.515zm1.556 3.257c-1.682 0-2.613-1.95-1.556-3.257l-3.11-2.515c-3.172 3.924-.38 9.772 4.666 9.772v-4zm20.1 0h-20.1v4h20.1v-4zm1.555-3.257c1.057 1.308.126 3.257-1.555 3.257v4c5.045 0 7.837-5.848 4.666-9.772l-3.11 2.515zm-6.155-7.615l6.155 7.615 3.111-2.515-6.155-7.615-3.111 2.515z"
+                fill="#8E898F" mask="url(#a)" />
+            </svg>
+          </a>
+          <a href="#" class="header__basket header__basket--true">
+            <span class="basket-value">2</span>
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="path-1-inside-1" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M29.8924 9H26.9505C26.4488 3.94668 22.1852 0 16.9999 0C11.8145 0 7.55098 3.94668 7.04925 9H4.1074C1.51 9 -0.398526 11.4369 0.223974 13.9586L4.42055 30.9587C4.8615 32.7449 6.46408 34 8.30397 34H25.6958C27.5357 34 29.1383 32.7449 29.5792 30.9587L33.7758 13.9587C34.3983 11.4369 32.4898 9 29.8924 9Z" />
+              </mask>
+              <path
+                d="M14.9999 10C14.9999 8.89543 15.8953 8 16.9999 8V6C14.7907 6 12.9999 7.79086 12.9999 10H14.9999ZM16.9999 8C18.1044 8 18.9999 8.89543 18.9999 10H20.9999C20.9999 7.79086 19.209 6 16.9999 6V8ZM18.9999 10V13H20.9999V10H18.9999ZM12.9999 10V13H14.9999V10H12.9999ZM26.9505 9L24.9603 9.1976L25.1392 11H26.9505V9ZM7.04925 9V11H8.86051L9.03947 9.1976L7.04925 9ZM0.223974 13.9586L-1.71774 14.438L0.223974 13.9586ZM4.42055 30.9587L2.47883 31.438L4.42055 30.9587ZM29.5792 30.9587L31.521 31.438L29.5792 30.9587ZM33.7758 13.9587L31.8341 13.4793V13.4793L33.7758 13.9587ZM26.9505 11H29.8924V7H26.9505V11ZM16.9999 2C21.147 2 24.5591 5.15708 24.9603 9.1976L28.9407 8.8024C28.3384 2.73628 23.2235 -2 16.9999 -2V2ZM9.03947 9.1976C9.44063 5.15708 12.8528 2 16.9999 2V-2C10.7763 -2 5.66132 2.73628 5.05904 8.8024L9.03947 9.1976ZM4.1074 11H7.04925V7H4.1074V11ZM2.16569 13.4793C1.85444 12.2185 2.8087 11 4.1074 11V7C0.211303 7 -2.65149 10.6554 -1.71774 14.438L2.16569 13.4793ZM6.36226 30.4793L2.16569 13.4793L-1.71774 14.438L2.47883 31.438L6.36226 30.4793ZM8.30397 32C7.38403 32 6.58274 31.3725 6.36226 30.4793L2.47883 31.438C3.14026 34.1174 5.54414 36 8.30397 36V32ZM25.6958 32H8.30397V36H25.6958V32ZM27.6375 30.4793C27.4171 31.3725 26.6158 32 25.6958 32V36C28.4557 36 30.8595 34.1174 31.521 31.438L27.6375 30.4793ZM31.8341 13.4793L27.6375 30.4793L31.521 31.438L35.7175 14.438L31.8341 13.4793ZM29.8924 11C31.1911 11 32.1454 12.2185 31.8341 13.4793L35.7175 14.438C36.6513 10.6554 33.7885 7 29.8924 7V11Z"
+                fill="#8E898F" mask="url(#path-1-inside-1)" />
+            </svg>
+          </a>
+          <div class="header__lang lang-box">
+            <ul class="lang-box__list">
+              <li class="lang-box__item"><a href="#" class="lang-box__link lang-box__link--active ">RO</a></li>
+              <li class="lang-box__item"><a href="#" class="lang-box__link">RU</a></li>
+              <li class="lang-box__item"><a href="#" class="lang-box__link">EN</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="delivery-menu">
+    <div class="container">
+      <h1 class="page-title">
+        Keller Holz Gastropub
+      </h1>
+      <div class="about-top">
+        <div class="about-top__item">
+          <h2 class="about-top__descr">
+            Фаст фуд но не просто сосиски, а колбаски собственного производства, по индивидуальному рецепту.
+          </h2>
+        </div>
+      </div>
+      <div class="delivery-info">
+        <div class="delivery-info__item">
+          <svg width="32" height="32">
+            <use href="img/sprite/sprite.svg#stole"></use>
+          </svg>
+          <div class="delivery-info__inner">
+            <h3 class="delivery-info__title">
+              Кухня и блюда:
+            </h3>
+            <p class="delivery-info__text">
+              Молдавская, баварская
+            </p>
+          </div>
+        </div>
+        <div class="delivery-info__item">
+          <svg width="32" height="32">
+            <use href="img/sprite/sprite.svg#clock"></use>
+          </svg>
+          <div class="delivery-info__inner">
+            <h3 class="delivery-info__title">
+              Время работы:
+            </h3>
+            <p class="delivery-info__text">
+              12.00 - 00.00
+            </p>
+          </div>
+        </div>
+        <div class="delivery-info__item">
+          <svg width="32" height="32">
+            <use href="img/sprite/sprite.svg#geo"></use>
+          </svg>
+          <div class="delivery-info__inner">
+            <h3 class="delivery-info__title">
+              Адрес:
+            </h3>
+            <p class="delivery-info__text">
+              Кишинев, ул. Пушкина, 4
+            </p>
+          </div>
+        </div>
+        <div class="delivery-info__item">
+          <svg width="32" height="32">
+            <use href="img/sprite/sprite.svg#tell"></use>
+          </svg>
+          <div class="delivery-info__inner">
+            <h3 class="delivery-info__title">
+              Телефон для заказов:
+            </h3>
+            <a href="tel:37369506441" class="delivery-info__link">
+              +(373) 69 506 441
+            </a>
+            <a href="tel:37369506442" class="delivery-info__link">
+              +(373) 69 506 442
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="delivery-categories">
+    <div class="container">
+      <nav class="delivery-nav kbb-nav">
+        <ul class="delivery-nav__list">
+          <li class="delivery-nav__item">
+            <a href="#" class="delivery-nav__link delivery-nav__link--active">
+              Термогеки
+            </a>
+          </li>
+          <li class="delivery-nav__item">
+            <a href="#" class="delivery-nav__link">
+              Пиво
+            </a>
+          </li>
+          <li class="delivery-nav__item">
+            <a href="#" class="delivery-nav__link">
+              Орешки
+            </a>
+          </li>
+          <li class="delivery-nav__item">
+            <a href="#" class="delivery-nav__link">
+              Мясо / сыр
+            </a>
+          </li>
+          <li class="delivery-nav__item">
+            <a href="#" class="delivery-nav__link">
+              Рыба
+            </a>
+          </li>
+          <li class="delivery-nav__item">
+            <a href="#" class="delivery-nav__link">
+              Снэки
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <section class="delivery-body">
+    <div class="container">
+      <div class="breadcrumbs-box delivery-breadcrumbs">
+        <ul class="breadcrumbs-box__list">
+          <li class="breadcrumbs-box__item">
+            <a href="index.html" class="breadcrumbs-box__link">Главная</a>
+          </li>
+          <li class="breadcrumbs-box__item">
+            <a href="index.html" class="breadcrumbs-box__link">Kellers Beer Boutique</a>
+          </li>
+          <li class="breadcrumbs-box__item">
+            <span class="breadcrumbs-box__page">Термогеки</span>
+          </li>
+        </ul>
+      </div>
+      <div class="kbb-info">
+        <svg width="65" height="65">
+          <use href="img/sprite/sprite.svg#kbb-icon"></use>
+        </svg>
+        <ul class="kbb-info__list">
+          <li class="kbb-info__item">
+            <span class="kbb-info__text">Заказы на пятницу, субботу и воскресенье принимаются до четверга!</span>
+          </li>
+          <li class="kbb-info__item">
+            <span class="kbb-info__text">Бесплатная аренда термокега на срок до 48 часов</span>
+          </li>
+          <li class="kbb-info__item">
+            <span class="kbb-info__text">Доставка термокегов не осуществляется!</span>
+          </li>
+        </ul>
+      </div>
+      <div class="kbb-catalog">
+        <div class="kbb-catalog__wrapper">
+          <div class="kbb-card">
+            <div class="kbb-card__top">
+              <img src="img/kbb-img.png" alt="кег" class="kbb-card__img">
+            </div>
+            <div class="kbb-card__name">
+              <h2 class="kbb-card__title">
+                Термокег «Airy Pilsner» светлое
+              </h2>
+              <p class="kbb-card__text">
+                фильтрованное 3,6°
+              </p>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="kbb-card__btn">
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div class="kbb-catalog__wrapper">
+          <div class="kbb-card">
+            <div class="kbb-card__top">
+              <img src="img/kbb-img.png" alt="кег" class="kbb-card__img">
+            </div>
+            <div class="kbb-card__name">
+              <h2 class="kbb-card__title">
+                Термокег «Airy Pilsner» светлое
+              </h2>
+              <p class="kbb-card__text">
+                фильтрованное 3,6°
+              </p>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="kbb-card__btn">
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div class="kbb-catalog__wrapper">
+          <div class="kbb-card">
+            <div class="kbb-card__top">
+              <img src="img/kbb-img.png" alt="кег" class="kbb-card__img">
+            </div>
+            <div class="kbb-card__name">
+              <h2 class="kbb-card__title">
+                Термокег «Airy Pilsner» светлое
+              </h2>
+              <p class="kbb-card__text">
+                фильтрованное 3,6°
+              </p>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="kbb-card__btn">
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div class="kbb-catalog__wrapper">
+          <div class="kbb-card">
+            <div class="kbb-card__top">
+              <img src="img/kbb-img.png" alt="кег" class="kbb-card__img">
+            </div>
+            <div class="kbb-card__name">
+              <h2 class="kbb-card__title">
+                Термокег «Airy Pilsner» светлое
+              </h2>
+              <p class="kbb-card__text">
+                фильтрованное 3,6°
+              </p>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="kbb-card__btn">
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div class="kbb-catalog__wrapper">
+          <div class="kbb-card">
+            <div class="kbb-card__top">
+              <img src="img/kbb-img.png" alt="кег" class="kbb-card__img">
+            </div>
+            <div class="kbb-card__name">
+              <h2 class="kbb-card__title">
+                Термокег «Airy Pilsner» светлое
+              </h2>
+              <p class="kbb-card__text">
+                фильтрованное 3,6°
+              </p>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="kbb-card__btn">
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div class="kbb-catalog__wrapper">
+          <div class="kbb-card">
+            <div class="kbb-card__top">
+              <img src="img/kbb-img.png" alt="кег" class="kbb-card__img">
+            </div>
+            <div class="kbb-card__name">
+              <h2 class="kbb-card__title">
+                Термокег «Airy Pilsner» светлое
+              </h2>
+              <p class="kbb-card__text">
+                фильтрованное 3,6°
+              </p>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="kbb-card__btn">
+              Заказать
+            </button>
+          </div>
+        </div>
+        <div class="kbb-catalog__wrapper">
+          <div class="kbb-card">
+            <div class="kbb-card__top">
+              <img src="img/kbb-img.png" alt="кег" class="kbb-card__img">
+            </div>
+            <div class="kbb-card__name">
+              <h2 class="kbb-card__title">
+                Термокег «Airy Pilsner» светлое
+              </h2>
+              <p class="kbb-card__text">
+                фильтрованное 3,6°
+              </p>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="kbb-card__wrapp">
+              <div class="kbb-card__coll">
+                <p class="kbb-card__price">
+                  352 MDL
+                </p>
+                <span class="kbb-card__weight">
+                  11л
+                </span>
+              </div>
+              <div class="kbb-card__coll">
+                <div class="block-count">
+                  <button class="block-count__plus block-count__button">
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.6 7.1h6.76v1.5H8.6v6.76H7.1V8.6H.36V7.1H7.1V.36h1.5V7.1z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <div class="block-count__line">
+                    <input value="1" class="block-count__input" type="number">
+                  </div>
+                  <button class="block-count__minus block-count__button">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 0.25V1.75H0.5V0.25H15.5Z" fill="black"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="kbb-card__btn">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <nav class="nav footer__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="brewery.html" class="nav__link">Пивоварня</a></li>
+            <li class="nav__item"><a href="restorans.html" class="nav__link">Рестораны</a></li>
+            <li class="nav__item"><a href="shops.html" class="nav__link">Магазины </a></li>
+            <li class="nav__item"><a href="our__bear.html" class="nav__link">Наше пиво</a></li>
+            <li class="nav__item"><a href="about__us.html" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="delivery.html" class="nav__link nav__link--active">Доставка</a></li>
+            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <a href="#" class="footer-social__link">
+            <svg width="32" height="32">
+              <use href="img/sprite/sprite.svg#fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer-social__link">
+            <svg width="32" height="32">
+              <use href="img/sprite/sprite.svg#insta"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom footer-bottom">
+        <div class="footer-bottom__left">
+          <div class="footer-bottom__privacy">
+            © 2020 Кишинев, Молдова. Все права защищены.
+          </div>
+          <div class="footer-bottom__lang bottom-lang">
+            <h3 class="bottom-lang__title">
+              Изменить язык:
+            </h3>
+            <ul class="bottom-lang__list">
+              <li class="bottom-lang__item">
+                <a href="#" class="bottom-lang__link bottom-lang__link--active">RO</a>
+              </li>
+              <li class="bottom-lang__item">
+                <a href="#" class="bottom-lang__link">RU</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom__right">
+          <a href="#" class="footer-bottom__developed">
+            <svg width="24" height="24">
+              <use href="img/sprite/sprite.svg#develop"></use>
+            </svg>
+            developed by ilab.md
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="overlay">
+    <div class="modal" id="kbb1" >
+      <button class="modal__close">&times;</button>
+      <h2 class="modal__title">
+        18+
+      </h2>
+      <p class="modal__text">
+        Содержимое раздела предназначено для просмотра лицами старше 18 лет.
+        Вам уже есть 18 лет?
+      </p>
+      <div class="modal-wrapp">
+        <button class="modal__age">
+          мне исполнилось 18
+        </button>
+        <button class="modal__no">
+          нет
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

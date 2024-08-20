@@ -1,0 +1,191 @@
+.kbb-info {
+  padding: 37px 123px 32px 50px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  width: 45%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 60px;
+  svg {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+  }
+}
+
+.kbb-info__item {
+  color: #FED105;
+  margin-bottom: 10px;
+  list-style-type: square;
+  font-size: 19px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.kbb-info__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #231F20;
+}
+
+.kbb-catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.kbb-card {
+   max-width: 296px;
+   width: 100%;
+   border-radius: 16px;
+   padding: 20px 17px 27px;
+   background-color: #fff;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   margin-bottom: 40px;
+}
+
+.kbb-card__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.kbb-card__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.kbb-card__name {
+  margin-bottom: 30px;
+}
+
+.kbb-card__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #8E898F;
+}
+
+.block-count {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.block-count__button {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FED105;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.block-count__minus {
+  border: 2px solid #8E898F;
+}
+
+.block-count__input {
+  border: none;
+  width: 32px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+
+.kbb-card__price {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  color: #000000;
+  margin-right: 10px;
+}
+
+.kbb-card__wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.kbb-card__coll {
+  display: flex;
+  align-items: center;
+}
+
+.kbb-card__weight {
+  background: #FED105;
+  border-radius: 3px;
+  width: 44px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #231F20;
+}
+
+.kbb-card__btn {
+  width: 244px;
+  height: 45px;
+  background: #FED105;
+  border-radius: 10px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #231F20;
+}
+
+.kbb-button {
+  width: 244px;
+  height: 45px;
+  background: #FED105;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #231F20;
+}
+
+.kbb-catalog__wrapper{
+  flex-grow: 0;
+  &:last-child {
+    flex-grow: 0.795;
+  }
+}
+
