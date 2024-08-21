@@ -62,5 +62,78 @@
         h2 {
             margin-bottom: 50px;
         }
+
+        &-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        &-instruction,
+        &-recommendation {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            span {
+                line-height: 140%;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        &-instruction {
+            margin-bottom: 24px;
+        }
+
+        &-recommendation {
+            margin-bottom: 36px;
+        }
+
+        &-info {
+            padding: 10px;
+            background-color: rgba(var(--neitral-green),1.0);
+            border-radius: 30px;
+        }
+
+        &-heading {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            span {
+                line-height: 140%;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+
+        &-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 200px;
+            background-color: rgba(var(--lighter-green),1.0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(var(--white),1.0);
+
+            svg {
+                fill: currentColor;
+            }
+        }
+
+        &-details {
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            li {
+                list-style-type: disc;
+                font-weight: 700;
+            }
+        }
     }
 }
