@@ -95,7 +95,7 @@
     background-color: rgba(var(--cl-h),1.0);
     border-radius: 30px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 48%;
     grid-gap: 20px;
   }
 }

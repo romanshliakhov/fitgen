@@ -2,4 +2,57 @@
     padding: 70px 0;
     background-color: rgba(var(--lighter-green),1.0);
     border-radius: 30px;
+    overflow: hidden;
+
+    &__top {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__controls {
+        padding: 5px;
+        background-color: rgba(var(--neitral-green),1.0);
+        border-radius: 200px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 200px;
+        background-color: transparent;
+        color: rgba(var(--white),1.0);
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        svg {
+            fill: currentColor;
+        }
+
+        &:hover {
+            background-color: rgba(var(--white),1.0);
+            color: rgba(var(--neitral-green),1.0);
+            box-shadow: 0 4px 8px 0 rgba(35, 134, 49, 0.39), 0 15px 15px 0 rgba(35, 134, 49, 0.34), 0 34px 21px 0 rgba(35, 134, 49, 0.2), 0 61px 24px 0 rgba(35, 134, 49, 0.06), 0 96px 27px 0 rgba(35, 134, 49, 0.01);
+        }
+    }
+
+    &__slider {
+        width: 100vw;        
+    }
+
+    &__slider-slide {
+        width: 400px;
+        margin: 0 10px;
+        padding: 32px;
+        background-color: rgba(var(--neitral-green),1.0);
+        border-radius: 30px;
+        box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.08);
+    }
 }
