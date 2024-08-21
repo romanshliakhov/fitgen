@@ -6,7 +6,7 @@
         padding: 70px 0 100px;
 
         h2 {
-            margin-bottom: 50px;
+            margin-bottom: 65px;
         }
 
         &-top {
@@ -25,6 +25,18 @@
             display: grid;
             grid-template-columns: auto 49%;
             grid-gap: 62px;
+            align-items: flex-start;
+        }
+
+        &-picture {
+            position: relative;
+            border-radius: 23px;
+            background-color: rgba(var(--neitral-green),1.0);
+        }
+
+        &-image {
+            display: flex;
+            margin-top: -10%;
         }
 
         &-items {
