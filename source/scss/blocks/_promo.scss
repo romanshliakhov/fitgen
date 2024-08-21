@@ -1,5 +1,118 @@
 .promo {
+    overflow: hidden;
     padding: 70px 0;
     background-color: rgba(var(--cl-h),1.0);
     border-radius: 30px;
+
+    &__wrapp {
+        display: grid;
+        grid-template-columns: 44% 51%;
+        justify-content: space-between;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__summary {
+        position: relative;
+        width: fit-content;
+        padding: 11px 30px 11px 0;
+        background-color: rgba(var(--lighter-green),1.0);
+        border-radius: 0 40px 40px 0;
+        font-size: 30px;
+        line-height: 100%;
+        font-weight: 300;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 200%;
+            left: -199%;
+            top: 0;
+            background-color: rgba(var(--lighter-green),1.0);
+        }
+
+        p {
+            font-weight: 800;
+        }
+
+        span {
+            font-size: 24px;
+            text-decoration: line-through;
+            color: rgba(var(--white), 0.5);;
+        }
+    }
+
+    &__details {
+        padding: 40px 48px;
+        background-color: rgba(var(--lighter-green),1.0);
+        border-radius: 30px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        p {
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+    &__item {
+        margin-top: -99px;
+        display: flex;
+    }
+
+    &__counter {
+        margin-bottom: 30px;
+        display: flex;
+
+        li {
+            padding: 0 54px;
+            border-right: 2px dashed rgba(var(--white), 0.4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+                border-right: none;
+            }
+
+            span {
+                font-size: 50px;
+                line-height: 100%;
+                font-weight: 800;
+            }
+        }
+    }
+
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__remaining {
+        span {
+            padding: 3px 9px;
+            background-color: rgba(var(--white),1.0);
+            border-radius: 290px;
+            font-weight: 700;
+            color: rgba(var(--lighter-green),1.0);
+        }
+
+    }
 }
