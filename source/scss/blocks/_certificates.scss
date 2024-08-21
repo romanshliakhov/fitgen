@@ -2,4 +2,35 @@
     padding: 70px 0;
     background-color: rgba(var(--lighter-green),1.0);
     border-radius: 30px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: 1fr 41%;
+        grid-gap: 20px;
+    }
+
+    &__lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    &__list {
+        display: flex;
+
+        picture,
+        img {
+            border-radius: 30px;
+            border: 1px solid rgba(var(--white),1.0);
+        }
+    }
+
+    &__picture {
+        display: flex;
+        margin-bottom: -70px;
+    }
 }
