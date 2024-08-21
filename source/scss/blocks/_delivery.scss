@@ -1,0 +1,34 @@
+.delivery {
+    padding: 70px 0;
+    background-color: rgba(var(--lighter-green),1.0);
+    border-radius: 30px;
+
+    &__items {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(var(--neitral-green),1.0);
+        border-radius: 200px;
+        padding: 16px;
+    }
+
+    &__info span {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

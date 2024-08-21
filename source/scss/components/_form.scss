@@ -1,0 +1,30 @@
+.form {
+    fieldset {
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding: 18px 32px;
+        border: 1px solid rgba(var(--white), 0.6);
+        border-radius: 200px;
+        color: rgba(var(--white),1.0);
+    }
+
+    button {
+        width: 100%;
+        justify-content: space-between;
+        color: rgba(var(--cl-h),1.0);
+        box-shadow: 0 5px 10px 0 rgba(29, 32, 29, 0.39), 0 18px 18px 0 rgba(29, 32, 29, 0.34), 0 42px 25px 0 rgba(29, 32, 29, 0.2), 0 74px 30px 0 rgba(29, 32, 29, 0.06), 0 115px 32px 0 rgba(29, 32, 29, 0.01);
+
+        span {
+            background-color: rgba(var(--cl-h),1.0);
+        }
+    }
+
+    &__text {
+        margin-top: 24px;
+        padding: 0 21px;
+        font-size: 14px;
+        color: rgba(var(--white), 0.67);
+    }
+}
