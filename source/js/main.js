@@ -48,3 +48,42 @@ $(document).ready(function() {
     });
 });
 
+// Before and After 
+$(document).ready(function() {
+    // Initialize the slider
+    $('.results__slider').each(function() {
+        var $this = $(this);
+        var $before = $this.find('.results__slider-before');
+        var $after = $this.find('.results__slider-after');
+        var $trigger = $this.find('.results__slider-trigger');
+
+        // Mouse down event on the trigger
+        $trigger.on('mousedown touchstart', function(e) {
+            e.preventDefault();
+
+            // Mouse move event
+            $(document).on('mousemove touchmove', function(e) {
+                var pageX = (e.pageX !== undefined) ? e.pageX : e.originalEvent.touches[0].pageX;
+                var offsetX = pageX - $this.offset().left;  // Use left instead of right
+                var width = $this.width();
+
+                if (offsetX < 0) offsetX = 0;
+                if (offsetX > width) offsetX = width;
+
+                // Set new width for the after image
+                $after.css('width', offsetX + 'px');
+                // Set new position for the trigger
+                $trigger.css('left', offsetX + 'px'); // Use left instead of right
+            });
+
+            // Mouse up event to stop dragging
+            $(document).on('mouseup touchend', function() {
+                $(document).off('mousemove touchmove');
+            });
+        });
+    });
+});
+
+
+
+

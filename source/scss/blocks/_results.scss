@@ -1,5 +1,85 @@
 .results {
+    position: relative;
     padding: 70px 0;
-    background-color: rgba(var(--lighter-green),1.0);
+    background-color: rgba(var(--lighter-green), 1.0);
     border-radius: 30px;
+
+    &__big-bg {
+        position: absolute;
+        top: -165px;
+        right: 0;
+        display: flex;
+    }
+
+    &__middle-bg {
+        position: absolute;
+        top: 0;
+        left: 45%;
+        transform: translate(-45%);
+        display: flex;
+    }
+
+    &__middle2-bg {
+        position: absolute;
+        top: -20px;
+        left: 65%;
+        transform: translate(-65%);
+        display: flex;
+    }
+
+    &__sliders {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    &__slider {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border: 2px solid rgba(var(--white),1.0);
+        border-radius: 30px;
+
+        &-before,
+        &-after {
+            width: 100%;
+            display: flex;
+
+            picture,
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%; /* Задаем ширину на старте */
+            z-index: 1; /* Слой после before */
+        }
+
+        &-trigger {
+            position: absolute;
+            top: 0;
+            left: 50%; /* Ползунок на старте посередине */
+            width: 2px;
+            height: 100%;
+            background-color: rgba(var(--cl-a),1.0);
+            cursor: ew-resize;
+            z-index: 10;
+            transform: translateX(-50%); /* Центрируем ползунок */
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+            }
+        }
+    }
 }
