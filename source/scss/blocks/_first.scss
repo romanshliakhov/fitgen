@@ -4,11 +4,52 @@
     background-color: rgba(var(--lighter-green),1.0);
     border-radius: 30px;
 
-    &__bg {
+    &__right-bg {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        display: flex;
+    }
+
+    &__middle-bg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    &__left-bg {
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        display: flex;
+    }
+
+    &__image {
         display: flex;
         position: absolute;
         right: -30px;
         bottom: -30px;
+    }
+
+    &__bg {
+        position: relative;
+        z-index: 1;
+        display: flex;
+    }
+
+    &__bg-left {
+        position: absolute;
+        top: 10%;
+        left: -2%;
+    }
+
+    &__bg-right {
+        position: absolute;
+        right: 5%;
+        top: 17%;
+        z-index: 2;
     }
 
     &__inner {
