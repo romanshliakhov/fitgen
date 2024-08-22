@@ -53,7 +53,7 @@
     }
 
     &__inner {
-        overflow: hidden;
+        overflow-x: clip;
     }
 
     &__wrapp {
