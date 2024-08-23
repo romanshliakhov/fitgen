@@ -1,12 +1,14 @@
 .promo {
     overflow: hidden;
-    padding: 70px 0;
+    padding: clamp(48px, 4.375vw, 70px) 0;
     background-color: rgba(var(--cl-h),1.0);
     border-radius: 30px;
 
     &__wrapp {
+        position: relative;
+        z-index: 3;
         display: grid;
-        grid-template-columns: 45% 51%;
+        grid-template-columns: auto 51%;
         justify-content: space-between;
     }
 
@@ -22,7 +24,7 @@
         padding: 11px 30px 11px 0;
         background-color: rgba(var(--lighter-green),1.0);
         border-radius: 0 40px 40px 0;
-        font-size: 30px;
+        font-size: clamp(24px, 2.083vw, 30px);
         line-height: 100%;
         font-weight: 300;
 
@@ -49,6 +51,7 @@
 
     &__details {
         padding: 40px 48px;
+        padding: 40px clamp(20px, 3vw, 48px);
         background-color: rgba(var(--lighter-green),1.0);
         border-radius: 30px;
     }
@@ -75,34 +78,42 @@
         display: flex;
 
         li {
-            padding: 0 54px;
+            flex-basis: 30%;
             border-right: 2px dashed rgba(var(--white), 0.4);
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
 
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             &:first-child {
-                padding-left: 0;
+                flex-basis: 25%;
+                justify-content: flex-start;
             }
 
             &:last-child {
-                padding-right: 0;
+                flex-basis: 25%;
+                justify-content: flex-end;
                 border-right: none;
             }
 
             span {
-                font-size: 50px;
+                font-size: clamp(32px, 3.472vw, 50px);
                 line-height: 100%;
                 font-weight: 800;
             }
         }
     }
 
-
     &__controls {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 20px;
     }
 
     &__remaining {

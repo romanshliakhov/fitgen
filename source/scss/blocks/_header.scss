@@ -52,11 +52,21 @@ header {
     ul {
       display: flex;
       align-items: center;
-      gap: 55px;
+      gap: clamp(40px, 3.819vw, 55px);
     }
 
     li:nth-last-child(2) {
-      margin-left: 255px;
+      margin-left: clamp(190px, 17.708vw, 255px);
+    }
+
+    @include desktop { 
+      li:nth-last-child(2) {
+        margin-left: 0;
+      }
+
+      li:nth-last-child(3) {
+        margin-left: clamp(190px, 17.708vw, 255px);
+      }
     }
 
     a {

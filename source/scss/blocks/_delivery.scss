@@ -1,10 +1,10 @@
 .delivery {
-    padding: 70px 0;
+    padding: clamp(48px, 4.375vw, 70px) 0;
     background-color: rgba(var(--lighter-green),1.0);
     border-radius: 30px;
 
     &__items {
-        margin-top: 50px;
+        margin-top: clamp(32px, 3.125vw, 50px);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;

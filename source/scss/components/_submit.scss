@@ -1,5 +1,6 @@
 .submit {
     width: fit-content;
+    flex-shrink: 0;
     padding: 8px 8px 8px 28px;
     background-color: rgba(var(--white),1.0);
     border-radius: 200px;
@@ -12,6 +13,7 @@
     font-weight: 700;
     color: rgba(var(--lighter-green),1.0);
     text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
 
     svg {
         fill: currentColor;
@@ -26,5 +28,16 @@
         border-radius: 200px;
         background-color: rgba(var(--lighter-green),1.0);
         color: rgba(var(--white),1.0);
+    }
+
+    &:hover,
+    &:active {
+        background-color: rgba(var(--darker-green),1.0);
+        color: rgba(var(--white),1.0);
+
+        span {
+            background-color: rgba(var(--white),1.0);
+            color: rgba(var(--lighter-green),1.0);
+        }
     }
 }

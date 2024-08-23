@@ -1,20 +1,30 @@
 .composition {
     position: relative;
-    padding: 70px 0;
+    padding: clamp(48px, 4.375vw, 70px) 0;
     background-color: rgba(var(--lighter-green),1.0);
     border-radius: 30px;
+    overflow: hidden;
 
     &__image {
         display: flex;
         position: absolute;
+        width: clamp(380px, 33.611vw, 484px);
+        height: clamp(240px, 20.069vw, 289px);
         left: 0;
         bottom: -70px;
+
+        picture,
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     &__wrapp {
         display: grid;
-        grid-template-columns: 376px 1fr;
-        grid-gap: 53px;
+        grid-template-columns: clamp(300px, 26.111vw, 376px) 1fr;
+        grid-gap: clamp(30px, 3.681vw, 53px);
     }
 
     &__info {
@@ -64,7 +74,7 @@
         }
 
         &-info {
-            padding: 0 45px;
+            padding: 0 clamp(15px, 2.813vw, 45px);
             display: flex;
             flex-direction: column;
             gap: 25px;

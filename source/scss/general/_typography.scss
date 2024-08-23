@@ -1,21 +1,23 @@
 h1 {
   margin-bottom: 35px;
-  font-size: 70px;
-  line-height: 100%;
+  // font-size: 70px;
+  font-size: clamp(32px, 4.861vw, 70px);
+  line-height: 120%;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 h2 {
   margin-bottom: 24px;
-  font-size: 50px;
-  line-height: 100%;
+  // font-size: 50px;
+  font-size: clamp(32px, 3.472vw, 50px);
+  line-height: 120%;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .subtitle {
-  font-size: clamp(30px, 2.778vw, 40px);
+  font-size: clamp(24px, 2.778vw, 40px);
   line-height: 120%;
   font-weight: 500;
   text-transform: uppercase;

@@ -1,0 +1,27 @@
+.navigation {
+    a {
+        position: relative;
+        transition: all 0.3s ease-in-out;
+
+        &::before {
+            content: '';
+            width: 0;
+            right: 0;
+            bottom: -4px;
+            position: absolute;
+            background-color: rgba(var(--white),1.0);
+            height: 2px;
+            transition: all .3s;
+            left: auto;
+        }
+
+        &:hover,
+        &:active {
+            &::before {
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
+        }
+    }
+}

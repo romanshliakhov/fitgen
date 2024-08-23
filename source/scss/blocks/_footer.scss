@@ -4,11 +4,11 @@
   display: grid;
   grid-template-columns: 40% 1fr;
   align-items: stretch;
-  grid-gap: 30px;
+  grid-gap: clamp(20px, 2.083vw, 30px);
 
   &__info {
     overflow: hidden;
-    padding: 48px 70px 23px;
+    padding: clamp(32px, 3.333vw, 48px) clamp(25px, 4.375vw, 70px) 23px;
     background-color: rgba(var(--lighter-green),1.0);
     border-radius: 30px;
   }
@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5px;
   }
 
   &__logo {
@@ -27,8 +28,9 @@
   }
 
   &__schedule {
+    flex-shrink: 0;
     position: relative;
-    padding: 11px 23px 11px 20px;
+    padding: 11px clamp(10px, 1.375vw, 22px) 11px clamp(10px, 1.25vw, 20px);
     background-color: rgba(var(--neitral-green),1.0);
     border-radius: 300px 0 0 300px;
 
@@ -44,7 +46,8 @@
   }
 
   &__nav {
-    margin-bottom: 25px;
+    padding-bottom: clamp(32px, 2.5vw, 40px);
+    border-bottom: 2px dashed rgba(var(--white), 0.4);
 
     ul {
       column-count: 3;
@@ -59,19 +62,19 @@
       line-height: 100%;
       font-weight: 500;
       text-transform: uppercase;
+      text-wrap: nowrap;
     }
   }
 
   &__bot {
-    padding-top: 25px;
-    border-top: 2px dashed rgba(var(--white), 0.4);
+    padding-top: clamp(32px, 2.5vw, 40px);
   }
 
   &__terms {
-    margin-bottom: 35px;
+    margin-bottom: clamp(32px, 2.188vw, 35px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 55px;
+    grid-gap: clamp(10px, 2.865vw, 55px);
 
     a {
       font-size: 14px;
@@ -79,6 +82,13 @@
       font-weight: 400;
       text-decoration: underline;
       color: rgba(var(--white), 0.5);
+      transition: all 0.2s ease-in-out;
+      // word-break: break-word;
+
+      &:hover,
+      &:active {
+        color: rgba(var(--white), 1.0);
+      }
     }
   }
 
@@ -91,18 +101,18 @@
 
   &__contact {
     position: relative;
-    padding: 70px;
+    padding: clamp(32px, 4.375vw, 70px) clamp(20px, 4.375vw, 70px);
     background-color: rgba(var(--cl-h),1.0);
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 48%;
-    grid-gap: 20px;
+    grid-gap: clamp(10px, 1.25vw, 20px);
 
     &-bg {
       display: flex;
       position: absolute;
       bottom: 0;
-      left: 70px;
+      left: clamp(10px, 4.375vw, 70px);
     }
   }
 }
