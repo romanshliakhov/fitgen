@@ -4,10 +4,30 @@ header {
   width: 100%;
   z-index: 30;
   padding: 0 var(--container-offset);
+
+  @media (max-width: 992px) {
+    position: relative;
+    margin-bottom: 8px;
+    border-radius: 200px;
+    background-color: rgba(var(--lighter-green),1.0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 15px 15px 0 rgba(0, 0, 0, 0.09), 0 34px 21px 0 rgba(0, 0, 0, 0.05), 0 61px 24px 0 rgba(0, 0, 0, 0.01), 0 96px 27px 0 rgba(0, 0, 0, 0);
+    padding: 0;
+
+    .container {
+      padding: 0;
+    }
+  }
 }
 
 .header {
   padding-top: 32px;
+
+  @media (max-width: 992px) {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__logo {
     position: absolute;
@@ -46,6 +66,26 @@ header {
       border-radius: 50%;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.09), 0 14px 9px 0 rgba(0, 0, 0, 0.05), 0 25px 10px 0 rgba(0, 0, 0, 0.01), 0 40px 11px 0 rgba(0, 0, 0, 0);
     }
+
+    @media (max-width: 992px) {
+      position: relative;
+      top: initial;
+      left: initial;
+      transform: initial;
+      padding: 0;
+      background-color: transparent;
+      border-radius: none;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+
+      a {
+        width: 65px;
+        height: 65px;
+      }
+    }
   }
 
   &__nav {
@@ -56,17 +96,11 @@ header {
     }
 
     li:nth-last-child(2) {
-      margin-left: clamp(190px, 17.708vw, 255px);
+      margin-left: 0;
     }
 
-    @include desktop { 
-      li:nth-last-child(2) {
-        margin-left: 0;
-      }
-
-      li:nth-last-child(3) {
-        margin-left: clamp(190px, 17.708vw, 255px);
-      }
+    li:nth-last-child(3) {
+      margin-left: clamp(190px, 24.194vw, 300px);
     }
 
     a {
@@ -74,6 +108,117 @@ header {
       line-height: 100%;
       font-weight: 500;
       text-transform: uppercase;
+    }
+
+    @include for-laptop {
+      li:nth-last-child(2) {
+        margin-left: clamp(190px, 17.708vw, 255px);
+      }
+
+      li:nth-last-child(3) {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    position: relative;
+    z-index: 90;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    a {
+      max-width: fit-content;
+      width: fit-content;
+      padding: 0;
+      background-color: transparent;
+      color: rgba(var(--white),1.0);
+      gap: 5px;
+      box-shadow: none;
+  
+      &:hover,
+      &:active {
+        background-color: transparent;
+      }  
+    }
+
+    @media (max-width: 992px) {
+      display: flex;
+    }
+
+    @media (max-width: 374px) {
+      a {
+        font-size: clamp(12px, 4.267vw, 16px);
+        gap: 0;
+
+        span {
+          width: clamp(30px, 11.733vw, 44px);
+          height: clamp(30px, 11.733vw, 44px);
+        }
+      }
+    }
+  }
+
+  &__mobile {
+    @media (max-width: 992px) {
+      padding-right: 5px;
+      position: relative;
+
+      &.active {
+        .header__mobile-menu {
+          visibility: visible;
+          opacity: 1;
+          z-index: 40;
+        }
+      }
+  
+      &-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 55px 32px 32px;
+        background-color: rgba(var(--lighter-green),1.0);
+        border-radius: 30px;
+        transition: opacity 0.2s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+  
+        nav {
+          display: flex;
+  
+          ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            width: max-content;
+          }
+  
+          li {
+            width: 100%;
+            padding: 18px 0;
+            margin-left: 0 !important;
+            border-top: 1px solid rgba(var(--cl-f), 0.14);
+          }
+        }
+  
+        &::before {
+          content: "";
+          position: absolute;
+          height: 52px;
+          width: 100px;
+          left: -20px;
+          top: 25px;
+          background-image: radial-gradient(circle farthest-side at left bottom, rgba(var(--cl-h), 0.01) 20%, hsl(129, 53%, 46%) 0%, hsl(129, 53%, 46%) 100%);
+          z-index: -1;
+        }
+      }
     }
   }
 }

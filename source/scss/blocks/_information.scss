@@ -13,7 +13,11 @@
             margin-bottom: clamp(32px, 4.063vw, 65px);
             display: grid;
             grid-template-columns: auto 49%;
-            grid-gap: 62px;
+            grid-gap: 32px 62px;
+
+            @include tablet {
+                grid-template-columns: 100%;
+            }
         }
 
         &-descr {
@@ -25,8 +29,14 @@
         &-content {
             display: grid;
             grid-template-columns: auto 49%;
-            grid-gap: 62px;
+            grid-gap: 48px 62px;
             align-items: flex-start;
+
+            @include tablet {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
         }
 
         &-picture {
@@ -44,6 +54,10 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: clamp(32px, 2.25vw, 36px) 20px;
+
+            @include small-tablet {
+                grid-template-columns: 100%;
+            }
         }
 
         &-item {
@@ -79,7 +93,18 @@
         &-items {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
+            grid-gap: 8px 20px;
+
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &-instructions {
+            @include tablet {
+                display: contents;
+            }
         }
 
         &-instruction,
@@ -100,17 +125,26 @@
         }
 
         &-recommendation {
-            margin-bottom: 36px;
+            margin-bottom: clamp(32px, 3.516vw, 36px);
+        }
+
+        &-link {
+            @include tablet {
+                order: 1;
+                margin: 40px auto 0;
+                max-width: 249px;
+                width: 100%;
+            }
         }
 
         &-info {
-            padding: 10px 10px 53px 10px;
+            padding: 10px 10px clamp(24px, 6.901vw, 53px) 10px;
             background-color: rgba(var(--neitral-green),1.0);
             border-radius: 30px;
         }
 
         &-heading {
-            margin-bottom: 25px;
+            margin-bottom: clamp(16px, 3.255vw, 25px);
             display: flex;
             align-items: center;
             gap: 20px;
@@ -138,10 +172,10 @@
         }
 
         &-details {
-            padding: 0 46px 0 40px;
+            padding: 0 clamp(24px, 5.99vw, 46px) 0 clamp(34px, 5.208vw, 40px);
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: clamp(10px, 1.953vw, 15px);
 
             li {
                 list-style-type: disc;

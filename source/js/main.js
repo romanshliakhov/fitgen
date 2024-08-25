@@ -7,13 +7,12 @@ $(document).ready(function() {
             slidesToScroll: 1,
             variableWidth: true,
             arrows: true,
-            speed: 2000,
+            speed: 1000,
             prevArrow: '.feedbacks__control--prev',
             nextArrow: '.feedbacks__control--next',
         });
     }
 });
-
 
 // Сountdown timer
 $(document).ready(function() {
@@ -51,38 +50,63 @@ $(document).ready(function() {
 // Before and After 
 $(document).ready(function() {
     // Initialize the slider
-    $('.results__slider').each(function() {
-        var $this = $(this);
-        var $before = $this.find('.results__slider-before');
-        var $after = $this.find('.results__slider-after');
-        var $trigger = $this.find('.results__slider-trigger');
-
-        // Mouse down event on the trigger
-        $trigger.on('mousedown touchstart', function(e) {
-            e.preventDefault();
-
-            // Mouse move event
-            $(document).on('mousemove touchmove', function(e) {
-                var pageX = (e.pageX !== undefined) ? e.pageX : e.originalEvent.touches[0].pageX;
-                var offsetX = pageX - $this.offset().left;  // Use left instead of right
-                var width = $this.width();
-
-                if (offsetX < 0) offsetX = 0;
-                if (offsetX > width) offsetX = width;
-
-                // Set new width for the after image
-                $after.css('width', offsetX + 'px');
-                // Set new position for the trigger
-                $trigger.css('left', offsetX + 'px'); // Use left instead of right
-            });
-
-            // Mouse up event to stop dragging
-            $(document).on('mouseup touchend', function() {
-                $(document).off('mousemove touchmove');
-            });
-        });
+    $('.beforeAfter').beforeAfter({
+        movable: true,
+        clickMove: true,
+        position: 90,
+        separatorColor: '#fafafa',
+        bulletColor: '#fafafa',
+        onMoveStart: function (e) {
+          console.log(event.target);
+        },
+        onMoving: function () {
+          console.log(event.target);
+        },
+        onMoveEnd: function () {
+          console.log(event.target);
+        },
     });
 });
+
+// Scroll to block
+$(document).ready(function() {
+    $('.anchor').click(function(event) {
+        event.preventDefault(); // Отменяем стандартное поведение ссылки
+        var targetId = $(this).attr('href'); // Получаем значение href (id цели)
+        var targetOffset = $(targetId).offset().top - 10; // Положение цели минус 15px отступа
+
+        // Закрываем мобильное меню при клике на ссылку
+        $('.burger').removeClass('active');
+        $('body').removeClass('dis-scroll');
+        $('.header__mobile').removeClass('active');
+
+        // Плавный скролл к целевому элементу
+        $('html, body').animate({
+            scrollTop: targetOffset
+        }, 800); // 800 миллисекунд для анимации
+    });
+});
+
+// Burger menu
+$(document).ready(function() {
+    // Открытие и закрытие меню по клику на бургер
+    $('.burger').click(function() {
+        $(this).toggleClass('active');
+        $('body').toggleClass('dis-scroll');
+        $('.header__mobile').toggleClass('active');
+    });
+
+    // Закрытие меню при клике вне области header
+    $(document).click(function(event) {
+        // Проверяем, был ли клик не по header или бургер-кнопке
+        if (!$(event.target).closest('.header__mobile, .burger').length) {
+            $('.burger').removeClass('active');
+            $('body').removeClass('dis-scroll');
+            $('.header__mobile').removeClass('active');
+        }
+    });
+});
+
 
 
 

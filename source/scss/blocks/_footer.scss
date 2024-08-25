@@ -6,6 +6,12 @@
   align-items: stretch;
   grid-gap: clamp(20px, 2.083vw, 30px);
 
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: clamp(12px, 1.953vw, 20px);
+  }
+
   &__info {
     overflow: hidden;
     padding: clamp(32px, 3.333vw, 48px) clamp(25px, 4.375vw, 70px) 23px;
@@ -18,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
   }
 
   &__logo {
@@ -83,12 +89,16 @@
       text-decoration: underline;
       color: rgba(var(--white), 0.5);
       transition: all 0.2s ease-in-out;
-      // word-break: break-word;
 
       &:hover,
       &:active {
         color: rgba(var(--white), 1.0);
       }
+    }
+
+    @include mobile {
+      grid-template-columns: 100%;
+      text-align: center;
     }
   }
 
@@ -97,6 +107,11 @@
     line-height: 120%;
     font-weight: 500;
     color: rgba(var(--white), 0.8);
+
+    @include mobile {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__contact {
@@ -106,13 +121,21 @@
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 48%;
-    grid-gap: clamp(10px, 1.25vw, 20px);
+    grid-gap: 30px clamp(10px, 1.25vw, 20px);
+
+    @include mobile {
+      grid-template-columns: 100%;
+    }
 
     &-bg {
       display: flex;
       position: absolute;
       bottom: 0;
       left: clamp(10px, 4.375vw, 70px);
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 }

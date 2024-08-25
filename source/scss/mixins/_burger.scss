@@ -1,56 +1,46 @@
 .burger {
-  position: relative;
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-  width: 48px;
-  height: 48px;
-  background: linear-gradient(180deg, #eaeaea 0%, #cbcbcb 100%);
-  border-radius: 100px;
-  color: rgba(var(--cl-c),1.0);
+  display: none;
+  padding: 0 13.5px;
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid rgba(var(--white),1.0);
+  border-radius: 200px;
   flex-shrink: 0;
-  transition: all .3s;
+  position: relative;
+  gap: 8px;
+  z-index: 50;
   cursor: pointer;
-  z-index: 90;
   transition: all 0.3s ease;
 
-  &:hover {
-    gap: 5px;
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   span {
     width: 100%;
-    border: 1.5px solid rgba(var(--cl-c),1.0);
+    border: 1.5px solid rgba(var(--white),1.0);
+    height: 2px;
+    border-radius: 20px;
     transition: all 0.3s ease;
+
+    &:nth-child(2) {
+      width: 70%;
+    }
   }
 
   &.active {
-    &:hover {
-      gap: 3px;
-    }
+    border: 1.5px solid transparent;
 
     span:nth-child(1) {
       transform: rotate(45deg) translate(4px, 4px);
     }
 
     span:nth-child(2) {
-      opacity: 0;
-    }
-
-    span:nth-child(3) {
+      width: 100%;
       transform: rotate(-45deg) translate(4px, -4px);
     }
   }
-
-  @include tablet {
-    background: transparent;
-    width: 62px;
-    height: 62px;
-    padding: 19px;
-  }
-
 }
 

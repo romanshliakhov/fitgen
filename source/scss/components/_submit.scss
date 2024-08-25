@@ -40,4 +40,9 @@
             color: rgba(var(--lighter-green),1.0);
         }
     }
+
+    @include tablet {
+        max-width: 249px;
+        width: 100%;
+    }
 }

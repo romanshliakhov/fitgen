@@ -19,6 +19,14 @@
         span {
             background-color: rgba(var(--cl-h),1.0);
         }
+
+        @include mobile {
+            max-width: 100%;
+
+            p {
+                flex-grow: 1;
+            }
+        }
     }
 
     &__text {
@@ -26,5 +34,10 @@
         padding: 0 clamp(8px, 1.313vw, 21px);
         font-size: 14px;
         color: rgba(var(--white), 0.67);
+
+        @include mobile {
+            padding:  0 15px;
+            text-align: center;
+        }
     }
 }

@@ -8,12 +8,9 @@
   --body-bg: rgba(var(--cl-a),1.0);
   --body-font-size: 16px;
   --content-width: 1240px;
-  --container-offset: 30px;
+  --container-offset: clamp(16px, 8vw, 30px);
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
-
-// --------------- default js variable ---------------
-  // --header-height: 72px;
-
+  --overlay-bg: rgba(var(--cl-h), 0.3);
 
 // --------------- default font-family variable ---------------
   --font-primary: "Noah" , sans-serif; // var(--font-primary);
@@ -28,6 +25,7 @@
   --neitral-green: #{HexToRGB(#30a642)}; // rgba(var(--neitral-green),1.0);
   --cl-g: #{HexToRGB(#dcf0e1)}; // rgba(var(--cl-g),1.0);
   --cl-h: #{HexToRGB(#0b3e12)}; // rgba(var(--cl-h),1.0);
+  --cl-f: #{HexToRGB(#a7ebb1)}; // rgba(var(--cl-f),1.0);
 }
 
 

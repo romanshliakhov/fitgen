@@ -8,6 +8,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
+
+        @include tablet {
+            grid-template-columns: 100%;
+            grid-gap: 32px;
+        }
     }
 
     &__item {

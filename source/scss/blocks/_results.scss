@@ -1,14 +1,30 @@
 .results {
     position: relative;
-    padding: 70px 0;
+    padding: clamp(48px, 4.375vw, 70px) 0;
     background-color: rgba(var(--lighter-green), 1.0);
     border-radius: 30px;
 
+    @include tablet {
+        padding-bottom: 123px;
+        overflow: hidden;
+    }
+    
     &__big-bg {
         position: absolute;
-        top: -165px;
-        right: 0;
+        top: -22%;
+        right: -10px;
         display: flex;
+        width: clamp(350px, 29.653vw, 427px);
+        height: clamp(295px, 28.333vw, 408px);
+
+        @include tablet {
+            top: initial;
+            right: -6%;
+            bottom: -2%;
+            z-index: 10;
+            width: clamp(210px, 34.18vw, 350px);
+            height: clamp(245px, 28.809vw, 295px);
+        }
     }
 
     &__middle-bg {
@@ -17,6 +33,15 @@
         left: 45%;
         transform: translate(-45%);
         display: flex;
+        width: 152px;
+        height: 139px;
+
+        @include tablet {
+            top: initial;
+            left: clamp(100px, 19.531vw, 200px);
+            bottom: 0;
+            transform: initial;
+        }
     }
 
     &__middle2-bg {
@@ -25,61 +50,44 @@
         left: 65%;
         transform: translate(-65%);
         display: flex;
+        width: clamp(190px, 15.903vw, 229px);
+        height: clamp(190px, 15.903vw, 229px);
+
+        @include tablet {
+            top: initial;
+            left: -50px;
+            bottom: -30px;
+            transform: initial;
+        }
     }
 
     &__sliders {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 20px;
+        grid-gap: clamp(8px, 3.125vw, 32px) 20px;
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 32px;
+        }
+
+        @include small-tablet {
+            grid-template-columns: 100%;
+        }
     }
 
     &__slider {
-        position: relative;
-        width: 100%;
         overflow: hidden;
         border: 2px solid rgba(var(--white),1.0);
         border-radius: 30px;
 
-        &-before,
-        &-after {
-            width: 100%;
+        & > div {
             display: flex;
-
-            picture,
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
         }
 
-        &-after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%;
-            height: 100%; /* Задаем ширину на старте */
-            z-index: 1; /* Слой после before */
-        }
-
-        &-trigger {
-            position: absolute;
-            top: 0;
-            left: 50%; /* Ползунок на старте посередине */
-            width: 2px;
-            height: 100%;
-            background-color: rgba(var(--cl-a),1.0);
-            cursor: ew-resize;
-            z-index: 10;
-            transform: translateX(-50%); /* Центрируем ползунок */
-
-            span {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                display: flex;
-            }
+        img {
+            max-width: initial;
+            height: 100% !important;
         }
     }
 }

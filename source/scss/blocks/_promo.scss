@@ -4,12 +4,33 @@
     background-color: rgba(var(--cl-h),1.0);
     border-radius: 30px;
 
+    @include mobile {
+        padding-bottom: 100px;
+
+        .container {
+            padding: 0 16px;
+        }
+    }
+
     &__wrapp {
         position: relative;
         z-index: 3;
         display: grid;
         grid-template-columns: auto 51%;
         justify-content: space-between;
+        grid-gap: 32px 0;
+
+        @media (max-width: 992px) {
+            grid-template-columns: 100%;
+
+            h2 {
+                margin-bottom: 12px;
+            }
+
+            .subtitle {
+                margin-bottom: 24px;
+            }
+        }
     }
 
     &__info {
@@ -47,13 +68,30 @@
             text-decoration: line-through;
             color: rgba(var(--white), 0.5);;
         }
+
+        @media (max-width: 374px) {
+            font-size: 18px;
+
+            span {
+                font-size: 20px;
+            }
+        }
     }
 
     &__details {
-        padding: 40px 48px;
         padding: 40px clamp(20px, 3vw, 48px);
         background-color: rgba(var(--lighter-green),1.0);
         border-radius: 30px;
+
+        @media (max-width: 992px) {
+            padding: 32px clamp(32px, 4.688vw, 48px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include mobile {
+            padding: 32px 16px;
+        }
     }
 
     &__head {
@@ -66,11 +104,28 @@
             font-weight: 500;
             text-transform: uppercase;
         }
+
+        @include mobile {
+            display: contents;
+
+            p {
+                display: block;
+                margin-bottom: 24px;
+            }
+        }
     }
 
     &__item {
         margin-top: -99px;
         display: flex;
+
+        @include mobile {
+            order: 1;
+            margin-top: 0;
+            justify-content: center;
+            height: 180px;
+            margin-bottom: -180px;
+        }
     }
 
     &__counter {
@@ -105,6 +160,10 @@
                 font-size: clamp(32px, 3.472vw, 50px);
                 line-height: 100%;
                 font-weight: 800;
+
+                @media (max-width: 374px) {
+                    font-size: 26px;
+                }
             }
         }
     }
@@ -113,7 +172,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
+        gap: 24px 20px;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__remaining {
